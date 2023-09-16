@@ -1,0 +1,28 @@
+---
+kubernetes:
+  children:
+    master:
+      hosts:
+        master0:
+          ansible_user: master
+          ansible_host: 10.0.1.50
+        master1:
+          ansible_user: master
+          ansible_host: 10.0.1.51
+        master2:
+          ansible_user: master
+          ansible_host: 10.0.1.52
+    worker:
+      hosts:
+        worker0:
+          ansible_user: worker
+          ansible_host: 10.0.1.60
+        worker1:
+          ansible_user: worker
+          ansible_host: 10.0.1.61
+        worker2:
+          ansible_user: worker
+          ansible_host: 10.0.1.62
+        worker3:
+          ansible_user: worker
+          ansible_host: 10.0.1.63

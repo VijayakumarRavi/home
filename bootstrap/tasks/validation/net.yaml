@@ -156,7 +156,7 @@
 - name: Verify SSH port is reachable
   ansible.builtin.wait_for:
     host: "{{ current_address }}"
-    port: 22
+    port: 69
     search_regex: OpenSSH
     timeout: 10
   connection: local
